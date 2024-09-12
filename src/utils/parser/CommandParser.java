@@ -35,7 +35,6 @@ public class CommandParser {
     public Optional<Runnable> parseCommand(String command, Runnable callback) {
 
         if (this.libCommands.containsKey(command)) {
-
             return Optional.of(this.libCommands.get(command));
         } else {
             return Optional.empty();
